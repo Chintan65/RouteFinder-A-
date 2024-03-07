@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #280b73; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(20, 30px);
+    grid-template-rows: repeat(20, 30px);
+    gap: 1px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #333; 
+    border: 2px solid #555; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell.start {
+    background-color: #00ff00; 
+    border-color: #00cc00;
+}
+
+.cell.goal {
+    background-color: #3399ff; 
+    border-color: #0077cc; 
+}
+
+.cell.obstacle {
+    background-color: #b41919; 
+    border-color: #444; 
+}
+
+.cell.path {
+    background-color: #FFD700; 
+    border-color: #FFA500; 
+}
+.cell.wall {
+    background-color: #ff6347; 
+    border: none;
+}
+.cell:hover {
+    cursor: pointer;
+    background-color: #444; 
+    border: 2px solid #888; 
+}
+
+
+.solve-button {
+    background-color: #e8edf2; 
+    color: #fff; 
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    
+}
+
+.solve-button:hover {
+    background-color: #1976D2; 
+}
